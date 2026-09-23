@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Задание 2 — Разработка пользовательского Web-интерфейса</title>
+<title>Лабораторная работа 2</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,7 +12,7 @@
 <div class="container">
 <div class="header-top">
 <img id="logo" src="logo.png.png" alt="Логотип">
-<h1 class="site-title">Название сайта</h1>
+<h1 class="site-title">Лабораторная работа 2</h1>
 </div>
 <nav>
 <ul>
@@ -135,12 +135,12 @@ alt="Круглая область">
 </section>
 
 <section id="form">
-<h2>Форма</h2>
-<form action="save.php" method="post">
+<h2 id="fragment-target">Форма</h2>
+<form action="thanks.html" target="_blank" method="get">
 
 <label for="fio">1. ФИО</label>
 <input type="text" id="fio" name="fio"
-placeholder="Мякинникова Эвелина Дмитривена"
+placeholder="Мякинникова Эвелина Дмитриевна"
 pattern="^[А-Яа-яЁёA-Za-z\s\-]+$"
 title="Только буквы, пробелы и дефисы"
 required>
@@ -178,17 +178,17 @@ required>
 
 <label for="langs">6. Любимый язык программирования (множественный выбор)</label>
 <select id="langs" name="langs[]" multiple required size="10">
-    <option value="pascal">Pascal</option>
-    <option value="c">C</option>
-    <option value="cpp">C++</option>
-    <option value="js">JavaScript</option>
-    <option value="php">PHP</option>
-    <option value="python">Python</option>
-    <option value="java">Java</option>
-    <option value="haskell">Haskell</option>
-    <option value="clojure">Clojure</option>
-    <option value="prolog">Prolog</option>
-    <option value="scala">Scala</option>
+<option value="pascal">Pascal</option>
+<option value="c">C</option>
+<option value="cpp">C++</option>
+<option value="js">JavaScript</option>
+<option value="php">PHP</option>
+<option value="python">Python</option>
+<option value="java">Java</option>
+<option value="haskell">Haskell</option>
+<option value="clojure">Clojure</option>
+<option value="prolog">Prolog</option>
+<option value="scala">Scala</option>
 </select>
 
 <label for="bio">7. Биография</label>
@@ -209,4 +209,13 @@ required></textarea>
 </form>
 </section>
 
+</main>
 
+<footer>
+<div class="container">
+<p>&copy; Eveliwz</p>
+</div>
+</footer>
+
+</body>
+</html>

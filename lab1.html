@@ -3,32 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Задание 2 — Разработка пользовательского Web-интерфейса</title>
-<link rel="stylesheet" href="style.css">
+<title>Лабораторная работа 1</title>
 </head>
 <body>
 
-<header>
-<div class="container">
-<div class="header-top">
-<img id="logo" src="logo.png.png" alt="Логотип">
-<h1 class="site-title">Название сайта</h1>
-</div>
-<nav>
-<ul>
-<li><a href="#links">Ссылка меню 1</a></li>
-<li><a href="#table">Ссылка меню 2</a></li>
-<li><a href="#form">Ссылка меню 3</a></li>
-</ul>
-</nav>
-</div>
-</header>
+<h1>Лабораторная работа 1</h1>
 
-<main class="container">
-
-<section id="links">
 <h2>Список гиперссылок</h2>
-<ul class="links">
+<ul>
 <li><a href="http://kubsu.ru/">1) Абсолютная ссылка на главную страницу сайта kubsu.ru</a></li>
 <li><a href="https://kubsu.ru/">2) Абсолютная ссылка на главную страницу сайта kubsu.ru в протоколе https</a></li>
 <li>3) Ссылка-изображение:<br>
@@ -74,7 +56,7 @@ alt="Круглая область">
 <a href="https://kubsu.ru/sveden/common" rel="nofollow" target="_blank">19) Ссылка, запрещённая для индексации поисковиками</a>
 </li>
 <li>20) Нумерованный список ссылок с подписями title:
-<ol class="links">
+<ol>
 <li><a href="https://kubsu.ru/" title="Главная страница КубГУ">Главная страница</a></li>
 <li><a href="https://kubsu.ru/sveden/common" title="Сведения об организации">Сведения об организации</a></li>
 <li><a href="https://kubsu.ru/ru/abiturient/campaign2026" title="Приёмная комиссия">Приёмная комиссия</a></li>
@@ -82,65 +64,13 @@ alt="Круглая область">
 </li>
 <li><a href="ftp://user%3Apassword%40ftp.example.com/files/report.zip">21) Ссылка на файл на сервере FTP с авторизацией</a></li>
 </ul>
-</section>
 
-<section id="table">
-<h2>Таблица</h2>
-<table>
-<thead>
-<tr>
-<th>Заголовок 1</th>
-<th>Заголовок 2</th>
-<th>Заголовок 3</th>
-<th>Заголовок 4</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Строка 1, Ячейка 1</td>
-<td>Строка 1, Ячейка 2</td>
-<td>Строка 1, Ячейка 3</td>
-<td>Строка 1, Ячейка 4</td>
-</tr>
-<tr>
-<td>Строка 2, Ячейка 1</td>
-<td colspan="2">Объединенная ячейка (2 колонки)</td>
-<td>Строка 2, Ячейка 4</td>
-</tr>
-<tr>
-<td>Строка 3, Ячейка 1</td>
-<td>Строка 3, Ячейка 2</td>
-<td>Строка 3, Ячейка 3</td>
-<td>Строка 3, Ячейка 4</td>
-</tr>
-<tr>
-<td>Строка 4, Ячейка 1</td>
-<td>Строка 4, Ячейка 2</td>
-<td>Строка 4, Ячейка 3</td>
-<td>Строка 4, Ячейка 4</td>
-</tr>
-<tr>
-<td rowspan="2">Объединенная ячейка (2 строки)</td>
-<td>Строка 5, Ячейка 2</td>
-<td>Строка 5, Ячейка 3</td>
-<td>Строка 5, Ячейка 4</td>
-</tr>
-<tr>
-<td>Строка 6, Ячейка 2</td>
-<td>Строка 6, Ячейка 3</td>
-<td>Строка 6, Ячейка 4</td>
-</tr>
-</tbody>
-</table>
-</section>
-
-<section id="form">
-<h2>Форма</h2>
-<form action="save.php" method="post">
+<h2 id="fragment-target">Форма</h2>
+<form action="thanks.html" target="_blank" method="get">
 
 <label for="fio">1. ФИО</label>
 <input type="text" id="fio" name="fio"
-placeholder="Мякинникова Эвелина Дмитривена"
+placeholder="Мякинникова Эвелина Дмитриевна"
 pattern="^[А-Яа-яЁёA-Za-z\s\-]+$"
 title="Только буквы, пробелы и дефисы"
 required>
@@ -178,17 +108,17 @@ required>
 
 <label for="langs">6. Любимый язык программирования (множественный выбор)</label>
 <select id="langs" name="langs[]" multiple required size="10">
-    <option value="pascal">Pascal</option>
-    <option value="c">C</option>
-    <option value="cpp">C++</option>
-    <option value="js">JavaScript</option>
-    <option value="php">PHP</option>
-    <option value="python">Python</option>
-    <option value="java">Java</option>
-    <option value="haskell">Haskell</option>
-    <option value="clojure">Clojure</option>
-    <option value="prolog">Prolog</option>
-    <option value="scala">Scala</option>
+<option value="pascal">Pascal</option>
+<option value="c">C</option>
+<option value="cpp">C++</option>
+<option value="js">JavaScript</option>
+<option value="php">PHP</option>
+<option value="python">Python</option>
+<option value="java">Java</option>
+<option value="haskell">Haskell</option>
+<option value="clojure">Clojure</option>
+<option value="prolog">Prolog</option>
+<option value="scala">Scala</option>
 </select>
 
 <label for="bio">7. Биография</label>
@@ -207,6 +137,6 @@ required></textarea>
 <button type="submit">9. Сохранить</button>
 
 </form>
-</section>
 
-
+</body>
+</html>

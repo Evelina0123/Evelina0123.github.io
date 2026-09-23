@@ -27,8 +27,8 @@ width="400" height="267">
 <li><a href="index.html?id=42">8) Ссылка с параметром id в URL</a></li>
 <li><a href="index.html">9) Относительная ссылка на страницу в текущем каталоге</a></li>
 <li><a href="about/index.html">10) Относительная ссылка на страницу в каталоге about</a></li>
-<li><a href="../index.html">11) Относительная ссылка на страницу в каталоге уровнем выше текущего</a></li>
-<li><a href="../../index.html">12) Относительная ссылка на страницу в каталоге двумя уровнями выше</a></li>
+<li><a href="folder1/page.html">11) Относительная ссылка на страницу в каталоге уровнем выше текущего</a></li>
+<li><a href="folder1/folder2/deep.html">12) Относительная ссылка на страницу в каталоге двумя уровнями выше</a></li>
 <li>13) Контекстная ссылка в тексте абзаца: подробнее об университете можно узнать
 на <a href="https://kubsu.ru/sveden/common">официальной странице сведений об организации</a>.</li>
 <li><a href="https://ru.wikipedia.org/wiki/HTML#История">14) Ссылка на фрагмент страницы стороннего сайта</a></li>
@@ -65,7 +65,7 @@ alt="Круглая область">
 <li><a href="ftp://user%3Apassword%40ftp.example.com/files/report.zip">21) Ссылка на файл на сервере FTP с авторизацией</a></li>
 </ul>
 
-<h2 id="fragment-target">Форма</h2>
+<h2>Форма</h2>
 <form action="thanks.html" target="_blank" method="get">
 
 <label for="fio">1. ФИО</label>
@@ -84,8 +84,7 @@ required>
 
 <label for="email">3. E-mail</label>
 <input type="email" id="email" name="email"
-placeholder="name@example.com"
-title="Введите корректный email (например, name@example.com)"
+placeholder="name@Введите корректный email (например, name@example.com)"
 required>
 
 <label for="birthdate">4. Дата рождения</label>

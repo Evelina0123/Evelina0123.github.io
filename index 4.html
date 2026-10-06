@@ -96,8 +96,8 @@
                      alt="Город" width="400" height="267">
               </a>
             </li>
-            <li class="mb-2"><a href="index.html" rel="nofollow noopener">4) Сокращённая ссылка на внутреннюю страницу</a></li>
-            <li class="mb-2"><a href="index.html" rel="nofollow noopener">5) Сокращённая ссылка на главную страницу</a></li>
+            <li class="mb-2"><a href="about/index.html" rel="nofollow noopener">4) Сокращённая ссылка на внутреннюю страницу</a></li>
+            <li class="mb-2"><a href="./" rel="nofollow noopener">5) Сокращённая ссылка на главную страницу</a></li>
             <li class="mb-2"><a href="#fragment-target">6) Ссылка на фрагмент текущей страницы</a></li>
             <li class="mb-2"><a href="index.html?param1=1&amp;param2=2&amp;param3=3">7) Ссылка с тремя параметрами в URL</a></li>
             <li class="mb-2"><a href="index.html?id=42">8) Ссылка с параметром id в URL</a></li>
@@ -109,12 +109,14 @@
               на <a href="https://kubsu.ru/sveden/common">официальной странице сведений об организации</a>.</li>
             <li class="mb-2"><a href="https://ru.wikipedia.org/wiki/HTML#История">14) Ссылка на фрагмент страницы стороннего сайта</a></li>
             <li class="mb-2">15. Ссылки из областей картинки (тег map):<br>
-              <img class="img-fluid rounded mt-1" src="https://avatars.mds.yandex.net/i?id=c022fe858f0feeba9c1136d5aa8bfdd0_l-12521528-images-thumbs&amp;n=13"
-                   alt="Карта с областями" usemap="#image-map" width="400" height="267">
-              <map name="image-map">
-                <area shape="rect" coords="10,10,190,250" href="https://kubsu.ru/" alt="Прямоугольная область">
-                <area shape="circle" coords="300,130,90" href="https://kubsu.ru/sveden/common" alt="Круглая область">
-              </map>
+              <div class="map-wrapper mt-1">
+                <img src="https://avatars.mds.yandex.net/i?id=c022fe858f0feeba9c1136d5aa8bfdd0_l-12521528-images-thumbs&amp;n=13"
+                     alt="Карта с областями" usemap="#image-map" width="400" height="267">
+                <map name="image-map">
+                  <area shape="rect" coords="10,10,190,250" href="https://kubsu.ru/" alt="Прямоугольная область" title="КубГУ">
+                  <area shape="circle" coords="300,130,90" href="https://kubsu.ru/sveden/common" alt="Круглая область" title="Сведения об организации">
+                </map>
+              </div>
             </li>
             <li class="mb-2"><a href="">16) Ссылка с пустым href</a></li>
             <li class="mb-2"><a>17) Ссылка без href</a></li>

@@ -85,6 +85,7 @@ section {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
 
 h2 {
@@ -97,19 +98,26 @@ h2 {
 table {
     width: 100%;
     border-collapse: collapse;
+    table-layout: fixed;
 }
 
 th {
     background-color: #e91e63;
     color: #ffffff;
     padding: 10px;
-    text-align: left;
+    text-align: center;
+    vertical-align: middle;
     border: 1px solid #e91e63;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 td {
     padding: 10px;
     border: 1px solid #f8bbd0;
+    vertical-align: top;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 tbody tr:nth-child(odd) td {
@@ -130,6 +138,27 @@ tbody tr:nth-child(even) td {
 
 .links a {
     color: #c2185b;
+}
+
+section img,
+.link-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+    border-radius: 4px;
+}
+
+.map-wrapper {
+    max-width: 100%;
+    margin-top: 10px;
+}
+
+.map-wrapper img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
 }
 
 form label {

@@ -28,6 +28,7 @@
 
 <section id="table">
 <h2>Таблица</h2>
+<div class="table-wrapper">
 <table>
 <thead>
 <tr>
@@ -74,6 +75,7 @@
 </tr>
 </tbody>
 </table>
+</div>
 </section>
 
 <section id="links">
@@ -108,7 +110,7 @@ width="400" height="267">
 alt="Карта с областями"
 usemap="#image-map"
 width="400" height="267">
-<map name="image-map">
+<map name="image-map" id="image-map">
 <area shape="rect" coords="10,10,190,250"
 href="https://kubsu.ru/"
 alt="Прямоугольная область">
@@ -217,6 +219,33 @@ required></textarea>
 <p>&copy; eveliwz</p>
 </div>
 </footer>
+
+
+<script>
+/* Пересчёт координат областей <area> при масштабировании картинки на узких экранах */
+(function () {
+    var img = document.querySelector('img[usemap="#image-map"]');
+    var areas = document.querySelectorAll('#image-map area');
+    if (!img || !areas.length) return;
+    var original = [];
+    areas.forEach(function (a) {
+        original.push(a.coords.split(',').map(Number));
+    });
+    var baseWidth = parseInt(img.getAttribute('width'), 10) || 400;
+
+    function resize() {
+        var k = img.clientWidth / baseWidth;
+        areas.forEach(function (a, i) {
+            a.coords = original[i].map(function (c) {
+                return Math.round(c * k);
+            }).join(',');
+        });
+    }
+    window.addEventListener('resize', resize);
+    window.addEventListener('load', resize);
+    resize();
+})();
+</script>
 
 </body>
 </html>

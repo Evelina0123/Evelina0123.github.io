@@ -16,8 +16,8 @@
 </div>
 <nav>
 <ul>
-<li><a href="#table">Таблица</a></li>
 <li><a href="#links">Ссылки</a></li>
+<li><a href="#table">Таблица</a></li>
 <li><a href="#form">Форма</a></li>
 </ul>
 </nav>
@@ -83,7 +83,7 @@
 <li><a href="https://kubsu.ru/">2) Абсолютная ссылка на главную страницу сайта kubsu.ru в протоколе https</a></li>
 <li>3) Ссылка-изображение:<br>
 <a href="https://kubsu.ru/" title="Перейти на kubsu.ru">
-<img src="https://avatars.mds.yandex.net/i?id=c022fe858f0feeba9c1136d5aa8bfdd0_l-12521528-images-thumbs&n=13"
+<img class="link-image" src="https://avatars.mds.yandex.net/i?id=c022fe858f0feeba9c1136d5aa8bfdd0_l-12521528-images-thumbs&amp;n=13"
 alt="Город"
 width="400" height="267">
 </a>
@@ -103,11 +103,11 @@ width="400" height="267">
 <li>
 15. Ссылки из областей картинки (тег map):
 <br>
-<img src="https://avatars.mds.yandex.net/i?id=c022fe858f0feeba9c1136d5aa8bfdd0_l-12521528-images-thumbs&n=13"
+<div class="map-wrapper">
+<img src="https://avatars.mds.yandex.net/i?id=c022fe858f0feeba9c1136d5aa8bfdd0_l-12521528-images-thumbs&amp;n=13"
 alt="Карта с областями"
 usemap="#image-map"
-width="400" height="267"
-style="max-width:100%; height:auto; display:block;">
+width="400" height="267">
 <map name="image-map">
 <area shape="rect" coords="10,10,190,250"
 href="https://kubsu.ru/"
@@ -116,6 +116,7 @@ alt="Прямоугольная область">
 href="https://kubsu.ru/sveden/common"
 alt="Круглая область">
 </map>
+</div>
 </li>
 <li><a href="">16) Ссылка с пустым href</a></li>
 <li><a>17) Ссылка без href</a></li>

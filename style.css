@@ -95,10 +95,16 @@ h2 {
     padding-bottom: 8px;
 }
 
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
 table {
     width: 100%;
+    min-width: 560px;
     border-collapse: collapse;
-    table-layout: fixed;
 }
 
 th {
@@ -142,23 +148,31 @@ tbody tr:nth-child(even) td {
 
 section img,
 .link-image {
-    max-width: 100%;
-    height: auto;
     display: block;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    aspect-ratio: 400 / 267;
+    object-fit: cover;
     margin: 10px 0;
     border-radius: 4px;
 }
 
 .map-wrapper {
-    max-width: 100%;
+    width: 100%;
+    max-width: 400px;
     margin-top: 10px;
 }
 
 .map-wrapper img {
+    width: 100%;
     max-width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 4px;
+    margin: 0;
+}
+
+.links li {
+    min-width: 0;
+    overflow-wrap: anywhere;
 }
 
 form label {
@@ -240,6 +254,19 @@ footer p {
 }
 
 @media (max-width: 480px) {
+    .container {
+        padding: 0 12px;
+    }
+
+    section {
+        padding: 14px;
+    }
+
+    th, td {
+        padding: 6px;
+        font-size: 14px;
+    }
+
     .site-title {
         font-size: 22px;
     }
